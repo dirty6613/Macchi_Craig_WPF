@@ -17,3 +17,19 @@ var dogAge = actualAge * 7;
 
 console.log("Sparky is " + actualAge + " human years old which is " + dogAge + " in dog years.");
 
+
+//Slice of Pie part 1
+
+//calculates how much pizza each partygoer will get at the party.
+
+var slices = 10;
+var people = 5;
+var totalPizza = 1;
+
+//multiplies totalPizza * slices divided by people
+results = (totalPizza * slices) / people;
+
+// print out results
+console.log("Each person ate " + results + " slices of pizza at the party.");
+
+
