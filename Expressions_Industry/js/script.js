@@ -14,10 +14,9 @@ var money = (cost * members) - prizeMoney;
 if (money >= 0)
   {
   var result = "The amount of money made is $" + money;
-alert(result);
   }
 else
   {
-  var result = "The amount of money lost is $" + money;
-alert(result);
+  var result = "The amount of money lost is $" + (money*= -1);
   }
+alert(result)
