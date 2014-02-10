@@ -1,7 +1,12 @@
-//Type Calculator
+//Personal Calculator
 
-var width = prompt("We are calculating the area of a rectangle.  \nPlease enter the width.");
-var height = prompt("Please enter the height.");
-var area = width * height;
-var result = "The area of your rectrangle is " + area + " sq feet.";
+var costHouse = prompt("I am calculating the amount of money needed to save each week to have enough money for a down payment on a house.  \nPlease enter the cost of the house.");
+var percentDown = prompt("Please enter what percent needs to be provided for down payment. (enter percentage as decimal)");
+//calculates amount down.
+var amountDown = costHouse * percentDown;
+var weeksUntilClosing = prompt("Please enter how many weeks until closing.");
+//calculats amount to save per week.
+var amountPerWeek = amountDown/weeksUntilClosing;
+var result = "The amount needed to save each week is " + amountPerWeek + ".";
+//displays results
 alert(result);
