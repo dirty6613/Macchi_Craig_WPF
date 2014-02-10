@@ -37,9 +37,9 @@ var gender = prompt("You live in a(n) " + house + "\nDo you like men or women?  
 		else  { 
 		var result=prompt(incorrect);
 		return;}
-	// selection for income
-	 //options for spouse income
+		 //options for spouse income
 	var spouseIncome = ["Rich","Poor"];
+	// selection for income
 	var income = prompt("You chose a " + spouse + ".  Please select a number between 1-20.");
 	if (income > 0 && income < 11){
 		spouseIncome = (spouseIncome[0]);
@@ -50,6 +50,7 @@ var gender = prompt("You live in a(n) " + house + "\nDo you like men or women?  
 		return;}
 	//options for spouse looks
 	var spouseLooks = ["Ugly", "Good-looking"];
+	// selection for looks
 var looks = prompt("You have a " + spouseIncome + " " + spouse + "!  Please select a number between 1-20.");
 	if (looks > 0 && looks < 11){
 		spouseLooks = (spouseLooks[0]);
@@ -66,5 +67,5 @@ result = "You have a " + spouseLooks + ", " + spouseIncome + " " + spouse + " an
   } else
   {var result = prompt(incorrect); 
   return;}
-  
+//output message
 alert(result);
