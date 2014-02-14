@@ -63,3 +63,12 @@ if (tempInput === "F" || tempInput === "f"){
 //output results
 	console.log("The temperature is " + results + " degrees " + tempDesc + ".");
 
+
+//Group 2
+//Check the Login
+
+//Check if username and password are correct
+
+
+
+//if not display message
