@@ -16,3 +16,13 @@ Use only code and techniques learned in this class.
 // Must weigh 250 lbs to enter the heavy-weight division
 var competitorsWeight = 180;
 var minWeight = 250;
+
+// if weight is greater than or equal to 250?
+if (competitorsWeight >= minWeight){
+	
+	//if weight is equal to or greater than 250
+	console.log("The competitor qualifies for the heavyweight division.");
+}else{
+	//if the weight is under 259
+	console.log("The competitor needs to gain some weight!");
+}
