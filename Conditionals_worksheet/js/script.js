@@ -26,3 +26,19 @@ if (competitorsWeight >= minWeight){
 	//if the weight is under 259
 	console.log("The competitor needs to gain some weight!");
 }
+
+
+//Group 1
+//Celsius to Fahrenheit converter
+
+//convert Celsius to Fahrenheit or Fahrenheit to Celsius based on user input
+
+
+
+var tempF = prompt("Please enter your temperature in Fahrenheit");
+
+var tempC = prompt("Please enter your temperature in Celsius");
+
+
+
+
