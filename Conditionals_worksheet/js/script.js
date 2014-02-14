@@ -92,7 +92,11 @@ if (username === user && password !== userPass){
 
 var tirePressure = [45, 45, 50, 50];
 
+//if tires are up to spec
+if (tirePressure[0] === tirePressure[1] && tirePressure[2] === tirePressure[3]){
+	console.log("The tires pass spec!");
 
-console.log("The tires pass spec!");
-
-console.log("Get your tires checked out!");
+//if the tires are NOT up to spec
+}else{
+	console.log("Get your tires checked out!");
+}
