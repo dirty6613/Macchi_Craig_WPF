@@ -84,3 +84,15 @@ if (username !== user){
 if (username === user && password !== userPass){
 	console.log("Password does not match our records.");
 }
+
+
+
+//Group 3
+//Tire Pressure I
+
+var tirePressure = [45, 45, 50, 50];
+
+
+console.log("The tires pass spec!");
+
+console.log("Get your tires checked out!");
