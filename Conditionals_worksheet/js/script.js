@@ -33,12 +33,27 @@ if (competitorsWeight >= minWeight){
 
 //convert Celsius to Fahrenheit or Fahrenheit to Celsius based on user input
 
+var tempInput = prompt("This is a converter to convert Fahrenheit to Celsius or Celsius to Fahrenheit. \nPlease enter \n\"C\" to convert Celsius to Fahreneit \nor \n\"F\" to convert Fahrenheit to Celsius.");
 
+//what option has the user entered for temp conversion?
+//for Fahrenheit to Celsius
+if (tempInput === "F" || tempInput === "f"){
 
-var tempF = prompt("Please enter your temperature in Fahrenheit");
+	var tempF = prompt("Please enter your temperature in Fahrenheit");
+	tempDesc = "Celsius";
+	results = ((tempF -  32)  *  5/9).toFixed(2);
 
-var tempC = prompt("Please enter your temperature in Celsius");
+//for Celsius to Fahrenheit	
+}else if (tempInput ==="C" || tempInput === "c"){
+	
+	var tempC = prompt("Please enter your temperature in Celsius");
+	tempDesc = "Fahrenheit";
+	results = (tempC * 9/5 + 32);
+//for incorrect selection	
+}else{
+	alert("You have entered an incorrect character!  Please refresh your page.");
+}
 
-
-
+//output results
+	alert("The temperature is " + results + " degrees " + tempDesc + ".");
 
