@@ -67,8 +67,20 @@ if (tempInput === "F" || tempInput === "f"){
 //Group 2
 //Check the Login
 
+var user = "John";
+var userPass = "JDpass";
+var username = "John";
+var password = "JDpass";
+
 //Check if username and password are correct
-
-
-
-//if not display message
+if (username === user && password === userPass){
+	console.log("Welcome, " + user);
+}
+//if incorrect user
+if (username !== user){
+	console.log("User not found.  Try again.");
+}
+//if incorrect password
+if (username === user && password !== userPass){
+	console.log("Password does not match our records.");
+}
