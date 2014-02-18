@@ -42,13 +42,11 @@ var memberships = prompt("The Gridiron God Challenge is a weekly pick'em fantasy
 //math for memberships
 //var for cost
 mCost = 10.00;
-//calc for memberships if more than 1 to incorporate the 50% off
-if (memberships > 1){
-amountDue = mCost + (((memberships - 1) * (mCost/2)))
-}else{
-	amountDue = mCost * memberships;
-}
-//Output total due and thank customer to alert box
-alert("Your total due today is $" + amountDue + ". \nWe appreciate your time and business!");
+//calc for memberships if more than 1 to incorporate the 50% off - ternary operator
+(memberships > 1) ? amountDue = mCost + (((memberships - 1) * (mCost/2))) : amountDue = mCost * memberships;
+
 //output total due and thank customer to console
 console.log("Your total due today is $" + amountDue + ". \nWe appreciate your time and business!");
+//Output total due and thank customer to alert box
+alert("Your total due today is $" + amountDue + ". \nWe appreciate your time and business!");
+
