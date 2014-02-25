@@ -3,14 +3,13 @@
 	Functions Worksheet */
 
 // Circumference
+//Call circleCircum function to calc circumference
+var x = circleCircum(3.14,5);
 
 // Calculate the Circumference of a Circle
-//var of radius
-var radius = 5;
-//var for diameter is radius * 2
-var diameter = radius * 2;
-//n = pi or 3.14
-var n = 3.14;
-//circum calc is pi * diameter
-var circum = n * diameter;
-
+function circleCircum(n, r){
+	var d = r * 2;
+	var circle = n * d;
+	return circle;
+}
+console.log("The circumference of the circle is " + x + ".");
