@@ -18,3 +18,10 @@ function circleCircum(r){
 }
 //output to log
 console.log("The circumference of the circle is " + x + ".");
+
+
+//Stung
+//Calculate how many bee stings are needed to kill an animal in a function
+
+var y = beeStings();
+
