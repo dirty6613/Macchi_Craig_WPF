@@ -4,11 +4,12 @@
 
 // Circumference
 //Call circleCircum function to calc circumference
-var x = circleCircum(3.14,5);
+var x = circleCircum(5);
 
 // Calculate the Circumference of a Circle
-function circleCircum(n, r){
+function circleCircum(r){
 	var d = r * 2;
+	var n = 3.14;
 	var circle = n * d;
 	return circle;
 }
