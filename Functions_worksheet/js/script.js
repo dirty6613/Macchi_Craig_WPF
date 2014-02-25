@@ -31,6 +31,8 @@ function beeStings(weight){
 	var amountPerPound = 8.666666667
 	//calculate stings per pound
 	var total = weight/amountPerPound;
+	//return total
+	return total;
 }
-
-
+//output total to log
+console.log("It takes " + y + " bee stings to kill this animal.");
