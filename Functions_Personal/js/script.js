@@ -59,7 +59,7 @@ alert("The score is " + totalH + " to " + totalA + ".");
 //if statement for when the game is over
 if (score === "end"){
 	//output to console log for ending game results
-	console.log("It is the end of the game!  The Home team scored  " + totalH + " points to the Away team scoring" + totalA + " points.");
+	console.log("It is the end of the game!  The Home team scored  " + totalH + " points to the Away team scoring " + totalA + " points.");
 	//output to alert for ending game results
 	alert("It is the end of the game!  The Home team scored  " + totalH + " points to the Away team scoring " + totalA + " points.");
 }
