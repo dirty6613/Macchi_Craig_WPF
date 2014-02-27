@@ -3,7 +3,14 @@
 	Functions Personal */
 	
 //A basketball score tally calculator
+//function for team A
+function teamA(){
+		
+}
 
+function teamB(){
+	
+}
 
 
 while (point !== "end"){
