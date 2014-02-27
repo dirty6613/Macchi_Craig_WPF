@@ -6,6 +6,8 @@
 var score;
 var a = 0;
 var h = 0;
+var totalH = 0;
+var totalA = 0;
 //function for Away team scores
 function teamA(){
 	//if 1 pt
@@ -52,14 +54,14 @@ if (team === "h"){
 	var totalH = teamH();
 }
 //output to console log for current score
-console.log("The score is " + totalH + " to " + totalA + ".");
+console.log("The score is the HOME team: " + totalH + " to the AWAY team: " + totalA + ".");
 //output to alert for current score
-alert("The score is " + totalH + " to " + totalA + ".");
+alert("The score is the HOME team: " + totalH + " to the AWAY team: " + totalA + ".");
 }
 //if statement for when the game is over
 if (score === "end"){
 	//output to console log for ending game results
-	console.log("It is the end of the game!  The Home team scored  " + totalH + " points to the Away team scoring " + totalA + " points.");
+	console.log("It is the end of the game!  The HOME team scored " + totalH + " points to the AWAY team scoring " + totalA + " points.");
 	//output to alert for ending game results
-	alert("It is the end of the game!  The Home team scored  " + totalH + " points to the Away team scoring " + totalA + " points.");
+	alert("It is the end of the game!  The HOME team scored  " + totalH + " points to the AWAY team scoring " + totalA + " points.");
 }
