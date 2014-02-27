@@ -4,6 +4,8 @@
 //A basketball score tally calculator
 //establish global variable for score
 var score;
+var b = 0;
+var a = 0;
 //function for 1 point
 function fg1(){
 	score =+ 1;
@@ -16,7 +18,36 @@ function fg2(){
 function fg3(){
 	score =+ 3;
 }
+function teamA(){
+	if(score === 1){
+	a =+ 1;
+	}else if(score ===2){
+	a =+ 2;
+	}else if (score ===3){
+	a =+ 3;
+}
+return a;
+}
+function teamB(){
+	if(score === 1){
+	b =+ 1;
+	}else if(score ===2){
+	b =+ 2;
+	}else if (score ===3){
+	b= score +3;
+	
+}
+return b;
+}
 
 while (score !== "end"){
-var score = prompt("Input amount of points just scored.  Type \"end\" to end game.  The score is " + teamA + "to " + teamB + ".");
+var team = prompt("Input team who score: a or b");
+if (team === "a"){
+	var totalA = teamA();
+}
+if (team === "b"){
+	var totalB = teamB();
+}
+var score = prompt("Input amount of points just scored.  Type \"end\" to end game.");
+alert("The score is " + totalA + " to " + totalB + ".");
 }
