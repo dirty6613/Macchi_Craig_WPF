@@ -1,23 +1,12 @@
 /*	Craig Macchi
 	2/27/2014
 	Functions Personal */	
-//A basketball score tally calculator
-//establish global variable for score
+//A basketball game score tally calculator for during a game
+//establish global variable
 var score;
-var b = 0;
-var a = 0;
-//function for 1 point
-function fg1(){
-	score =+ 1;
-}
-//function for 2 pointer
-function fg2(){
-	score =+ 2;	
-}
-//function for 3 pointer
-function fg3(){
-	score =+ 3;
-}
+var TotalH = 0;
+var TotalA = 0;
+//function for Away team scores
 function teamA(){
 	if(score == 1){
 	a += 1;
@@ -28,26 +17,29 @@ function teamA(){
 }
 return a;
 }
-function teamB(){
+//function for Home team scores
+function teamH(){
 	if(score == 1){
-	b += 1;
+	h += 1;
 	}else if(score == 2){
-	b += 2;
+	h += 2;
 	}else if (score == 3){
-	b += 3;
+	h += 3;
 	
 }
-return b;
+return h;
 }
 
 while (score !== "end"){
-var team = prompt("Input team who scored: a or b");
+
+var score = prompt("Input amount of points just scored.  Type \"end\" to end game.");
+var team = prompt("Input team who scored: \'h\' for Home or Away for \'a\'");
 if (team === "a"){
 	var totalA = teamA();
 }
-if (team === "b"){
-	var totalB = teamB();
+if (team === "h"){
+	var totalH = teamH();
 }
-var score = prompt("Input amount of points just scored.  Type \"end\" to end game.");
-alert("The score is " + totalA + " to " + totalB + ".");
+console.log("The score is " + totalH + " to " + totalH + ".");
+alert("The score is " + totalH + " to " + totalA + ".");
 }
