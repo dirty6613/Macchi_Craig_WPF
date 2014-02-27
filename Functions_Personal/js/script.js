@@ -4,8 +4,8 @@
 //A basketball game score tally calculator for during a game
 //establish global variable
 var score;
-var TotalH = 0;
-var TotalA = 0;
+var a = 0;
+var h = 0;
 //function for Away team scores
 function teamA(){
 	if(score == 1){
@@ -40,6 +40,10 @@ if (team === "a"){
 if (team === "h"){
 	var totalH = teamH();
 }
-console.log("The score is " + totalH + " to " + totalH + ".");
+console.log("The score is " + totalH + " to " + totalA + ".");
 alert("The score is " + totalH + " to " + totalA + ".");
+}
+if (score === "end"){
+	console.log("It is the end of the game!  The Home team scored  " + totalH + " points to the Away team scoring" + totalA + " points.");
+	alert("It is the end of the game!  The Home team scored  " + totalH + " points to the Away team scoring " + totalA + " points.");
 }
