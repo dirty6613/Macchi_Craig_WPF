@@ -19,29 +19,29 @@ function fg3(){
 	score =+ 3;
 }
 function teamA(){
-	if(score === 1){
-	a =+ 1;
-	}else if(score ===2){
-	a =+ 2;
-	}else if (score ===3){
-	a =+ 3;
+	if(score == 1){
+	a += 1;
+	}else if(score == 2){
+	a += 2;
+	}else if (score == 3){
+	a += 3;
 }
 return a;
 }
 function teamB(){
-	if(score === 1){
-	b =+ 1;
-	}else if(score ===2){
-	b =+ 2;
-	}else if (score ===3){
-	b= score +3;
+	if(score == 1){
+	b += 1;
+	}else if(score == 2){
+	b += 2;
+	}else if (score == 3){
+	b += 3;
 	
 }
 return b;
 }
 
 while (score !== "end"){
-var team = prompt("Input team who score: a or b");
+var team = prompt("Input team who scored: a or b");
 if (team === "a"){
 	var totalA = teamA();
 }
