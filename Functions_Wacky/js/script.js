@@ -13,4 +13,11 @@ function sleepDaily(am, pm){
 	//return to function
 	return hoursDaily;	
 }
+var a = prompt("How many hours did you sleep from 12:00am to 11:59am?");
+var p = prompt("How many hours did you sleep from 12:00pm to 11:59pm?");
+//call function with total of daily
+var dailyTotal = sleepDaily(a, p);
+
+console.log(dailyTotal);
+
 
